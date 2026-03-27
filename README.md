@@ -42,7 +42,6 @@ This Next.js sample application demonstrates how to integrate the [PayPal JS SDK
 **Step 1 — Set up environment variables:**
 
 ```bash
-cd client/prebuiltPages/nextjs
 cp .env.example .env
 # Edit .env and add your PAYPAL_SANDBOX_CLIENT_ID and PAYPAL_SANDBOX_CLIENT_SECRET
 ```
@@ -138,7 +137,7 @@ All PayPal API calls are consolidated in `src/actions/paypal.ts` as Server Actio
 
 The Next.js app integrates with PayPal directly via server actions in `src/actions/paypal.ts`, using `@paypal/paypal-server-sdk`. No separate backend server is required.
 
-**Environment variables** (set in `client/prebuiltPages/nextjs/.env`):
+**Environment variables** (set in `.env`):
 
 | Variable                       | Description                                                                  |
 | ------------------------------ | ---------------------------------------------------------------------------- |
